@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>News Summarizer</h1>
+    <a href="History.php" class="history-btn">History</a>
+    <form id="summarize-form">
+      <label class="label" for="url">URL</label>
+      <textarea id="url" class="text-area" rows="1" cols="140"></textarea>
+      <button id="summarize-btn">Summarize</button>
+    </form>
+    <div id="output">
+      <label class="label" for="title">Title</label>
+      <textarea id="title" class="text-area disabled" rows="1" cols="140" readonly></textarea>
+      <label class="label" for="author">Author</label>
+      <textarea id="author" class="text-area disabled" rows="1" cols="140" readonly></textarea>
+      <label class="label" for="publication">Publishing Date</label>
+      <textarea id="publication" class="text-area disabled" rows="1" cols="140" readonly></textarea>
+      <label class="label" for="summary">Summary</label>
+      <textarea id="summary" class="text-area disabled" rows="20" cols="140" readonly></textarea>
+      <label class="label" for="sentiment">Sentiment Analysis</label>
+      <textarea id="sentiment" class="text-area disabled" rows="1" cols="140" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
